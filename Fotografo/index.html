@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julián Valenzuela | Editorial Photography</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .editorial-frame {
+            width: 90%;
+            max-width: 400px;
+            background: #0a0a0a;
+            padding: 2px;
+            position: relative;
+        }
+        .content-box {
+            border: 1px solid #1a1a1a;
+            padding: 40px;
+            text-align: center;
+        }
+        .img-container {
+            width: 100%;
+            aspect-ratio: 4/5;
+            background: #111;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(20%) contrast(1.1);
+            transition: transform 0.8s ease;
+        }
+        .name {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 2rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 5px;
+        }
+        .role {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .link-item {
+            display: block;
+            padding: 15px 0;
+            border-top: 1px solid #1a1a1a;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            transition: color 0.3s;
+            text-decoration: none;
+            color: #fff;
+        }
+        .link-item:hover { color: #888; }
+    </style>
+</head>
+<body>
+    <div class="editorial-frame">
+        <div class="content-box">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&q=80&w=800" alt="Julián Valenzuela">
+            </div>
+            
+            <h1 class="name">Julián Valenzuela</h1>
+            <p class="role">Editorial & Fashion Portraiture</p>
+
+            <div class="mt-8">
+                <a href="#" class="link-item">Portfolio</a>
+                <a href="mailto:contact@julianvalenzuela.com" class="link-item">Inquiries</a>
+                <a href="#" class="link-item">Instagram</a>
+            </div>
+
+            <div class="mt-10 text-[0.6rem] text-[#333] uppercase tracking-[0.2em]">
+                Based in CDMX
+            </div>
+        </div>
+    </div>
+</body>
+</html>
